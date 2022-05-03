@@ -9,7 +9,7 @@
 // vdm by xeroxz
 #include "dependencies/vdm/vdm_ctx/vdm_ctx.hpp"
 
-// a wrapper around getting ntoskrnl exports
+// wrappers around getting exports
 const auto get_ntk_export = std::bind( &util::get_kmodule_export, "ntoskrnl.exe", std::placeholders::_1, false );
 const auto get_w32_export = std::bind( &util::get_kmodule_export, "win32kbase.sys", std::placeholders::_1, false );
 
