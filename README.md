@@ -14,3 +14,4 @@ EasyAntiCheat can easily patch this method by attaching to a process that has su
 - This method will evade all EasyAntiCheat scans
 - We can easily inline hook a function for simple usermode to kernel communication
 - The function can easily be changed that is mapped within the driver, as well as the data structure
+- Unlike previous released mappers, this raises 0 flags to EasyAntiCheat and is proven upon testing, not assumption, to be undetected
