@@ -10,7 +10,7 @@ In short, session drivers are drivers that are not globally mapped to every addr
 ## How can it be fixed?
 EasyAntiCheat can easily patch this method by attaching to a process that has such drivers mapped into its address space, such as the explorer process.
 
-## Note
-- This project uses vdm by xerox to control the vulnerable driver
-- This project uses the rweverything driver as the vulnerable driver
-- The mapped shellcode will evade all EasyAntiCheat scans
+## Notes
+- This method will evade all EasyAntiCheat scans
+- We can easily inline hook a function for simple usermode to kernel communication
+- The function can easily be changed that is mapped within the driver, as well as the data structure
