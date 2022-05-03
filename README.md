@@ -8,7 +8,7 @@ When the EasyAntiCheat driver is initialized, it walks through each loaded drive
 In short, session drivers are drivers that are not globally mapped to every address space, such as the address space EasyAntiCheat's driver is executing under.  This allows us to freely patch such drivers without any consequences.
 
 ## How can it be fixed?
-EasyAntiCheat can easily patch this method by attaching to a process that has such drivers mapped into its address space.
+EasyAntiCheat can easily patch this method by attaching to a process that has such drivers mapped into its address space, such as the explorer process.
 
 ## Note
 - This project uses vdm by xerox to control the vulnerable driver
